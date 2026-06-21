@@ -21,9 +21,9 @@ export function Footer() {
               <Link href="/agentes" className="text-sm text-muted-foreground hover:text-foreground">
                 Agentes
               </Link>
-              <Link href="/registro" className="text-sm text-muted-foreground hover:text-foreground">
-                Registrarse
-              </Link>
+              <a href="https://agentesraifi.com/registro" className="text-sm text-muted-foreground hover:text-foreground">
+                Portal de Agentes
+              </a>
             </nav>
           </div>
           <div>

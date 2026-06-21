@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { AuthProvider } from '@/contexts/auth-context'
 import { QueryProvider } from '@/contexts/query-provider'
 import { Toaster } from '@/components/ui/toaster'
 
@@ -25,10 +24,8 @@ export default function RootLayout({
     <html lang="es">
       <body className={inter.className}>
         <QueryProvider>
-          <AuthProvider>
-            {children}
-            <Toaster />
-          </AuthProvider>
+          {children}
+          <Toaster />
         </QueryProvider>
       </body>
     </html>

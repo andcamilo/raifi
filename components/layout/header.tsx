@@ -2,13 +2,11 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useAuth } from '@/contexts/auth-context'
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
 export function Header() {
-  const { isAuthenticated, loading } = useAuth()
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
@@ -26,24 +24,9 @@ export function Header() {
           <Link href="/agentes" className="text-sm text-muted-foreground hover:text-foreground">
             Agentes
           </Link>
-          {!loading && (
-            <>
-              {isAuthenticated ? (
-                <Button asChild size="sm">
-                  <Link href="/dashboard">Mi Dashboard</Link>
-                </Button>
-              ) : (
-                <div className="flex items-center gap-2">
-                  <Button variant="ghost" size="sm" asChild>
-                    <Link href="/login">Iniciar Sesion</Link>
-                  </Button>
-                  <Button size="sm" asChild>
-                    <Link href="/registro">Registrarse</Link>
-                  </Button>
-                </div>
-              )}
-            </>
-          )}
+          <Button size="sm" asChild>
+            <a href="https://agentesraifi.com">Portal de Agentes</a>
+          </Button>
         </nav>
 
         {/* Mobile toggle */}
@@ -74,24 +57,9 @@ export function Header() {
             >
               Agentes
             </Link>
-            {!loading && (
-              <>
-                {isAuthenticated ? (
-                  <Button asChild size="sm">
-                    <Link href="/dashboard">Mi Dashboard</Link>
-                  </Button>
-                ) : (
-                  <div className="flex flex-col gap-2">
-                    <Button variant="ghost" size="sm" asChild>
-                      <Link href="/login">Iniciar Sesion</Link>
-                    </Button>
-                    <Button size="sm" asChild>
-                      <Link href="/registro">Registrarse</Link>
-                    </Button>
-                  </div>
-                )}
-              </>
-            )}
+            <Button size="sm" asChild>
+              <a href="https://agentesraifi.com">Portal de Agentes</a>
+            </Button>
           </nav>
         </div>
       )}

@@ -1,4 +1,4 @@
-import type { PropertySerialized, AgentSerialized, LeadSerialized, ConnectionSerialized } from '@/types'
+import type { PropertySerialized, AgentSerialized } from '@/types'
 
 export const MOCK_AGENTS: AgentSerialized[] = [
   {
@@ -272,60 +272,6 @@ export const MOCK_PROPERTIES: PropertySerialized[] = [
     colegajeCommissionSplit: 50,
     viewsCount: 203,
     createdAt: '2024-05-18T00:00:00Z',
-    updatedAt: '2024-06-01T00:00:00Z',
-  },
-]
-
-export const MOCK_LEADS: LeadSerialized[] = [
-  {
-    id: 'lead-1',
-    propertyId: 'prop-1',
-    propertyTitle: 'Apartamento moderno en Chapinero Alto',
-    agentId: 'agent-1',
-    name: 'Maria Rodriguez',
-    email: 'maria@email.com',
-    phone: '3001112233',
-    message: 'Me interesa mucho este apartamento. Podemos agendar una visita esta semana?',
-    source: 'web',
-    isRead: false,
-    createdAt: '2024-06-01T10:00:00Z',
-  },
-  {
-    id: 'lead-2',
-    propertyId: 'prop-5',
-    propertyTitle: 'Oficina premium en World Trade Center',
-    agentId: 'agent-1',
-    name: 'Juan Perez',
-    email: 'juan@empresa.co',
-    phone: '3104445566',
-    message: 'Necesitamos una oficina para 15 personas. Esta disponible?',
-    source: 'web',
-    isRead: true,
-    createdAt: '2024-05-28T14:30:00Z',
-  },
-]
-
-export const MOCK_CONNECTIONS: ConnectionSerialized[] = [
-  {
-    id: 'conn-1',
-    requesterId: 'agent-3',
-    receiverId: 'agent-1',
-    requesterName: 'Valentina Ochoa',
-    receiverName: 'Sofia Martinez',
-    status: 'accepted',
-    message: 'Hola Sofia, me gustaria colaborar contigo en inmuebles en Bogota.',
-    createdAt: '2024-05-15T00:00:00Z',
-    updatedAt: '2024-05-16T00:00:00Z',
-  },
-  {
-    id: 'conn-2',
-    requesterId: 'agent-4',
-    receiverId: 'agent-1',
-    requesterName: 'Andres Gutierrez',
-    receiverName: 'Sofia Martinez',
-    status: 'pending',
-    message: 'Tengo clientes en Bogota interesados en fincas del eje cafetero.',
-    createdAt: '2024-06-01T00:00:00Z',
     updatedAt: '2024-06-01T00:00:00Z',
   },
 ]

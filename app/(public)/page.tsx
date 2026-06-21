@@ -22,7 +22,7 @@ export default function HomePage() {
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button size="lg" asChild>
-            <Link href="/registro">Comenzar Gratis</Link>
+            <a href="https://agentesraifi.com/registro">Comenzar Gratis</a>
           </Button>
           <Button variant="outline" size="lg" asChild>
             <Link href="/inmuebles">Ver Inmuebles</Link>
@@ -83,7 +83,7 @@ export default function HomePage() {
             Sin cuotas mensuales. Solo pagas el 10% de comision cuando cierras un negocio.
           </p>
           <Button size="lg" className="mt-6" asChild>
-            <Link href="/registro">Crear Mi Cuenta</Link>
+            <a href="https://agentesraifi.com/registro">Crear Mi Cuenta</a>
           </Button>
         </div>
       </section>

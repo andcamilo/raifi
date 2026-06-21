@@ -8,7 +8,3 @@ export async function submitContactForm(
 ) {
   return { success: true, error: undefined as string | undefined }
 }
-
-export async function markLeadAsRead(_leadId: string) {
-  return { success: true, error: undefined as string | undefined }
-}
